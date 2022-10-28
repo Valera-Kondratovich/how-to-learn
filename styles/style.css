@@ -14,13 +14,107 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  box-sizing: border-box;
 }
+.header_position{
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  border: 1px solid red; /*НЕ ЗАБЫТЬ УДАЛИТЬ*/
+}
+.logo {
+}
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  z-index: 1;
+
+}
+.header__title {
+  width: 730px;
+  margin-left: 64px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+  z-index: 2;
+}
+.header__sybtitle {
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  width: 388px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  z-index: 3;
+}
+.header__link {
+}
+.header__link::after{
+  content:'\2192';
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
+  position: absolute;
+  top: 64px;
+  right: 0;
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  z-index: -1;
 }
+.content{
+  border:1px solid rebeccapurple;
+}
+.description{
+  width: 80%;
+  border:1px solid rgb(90, 236, 255);
+  margin: 0 auto;
+}
+.two-columns{
+  display: flex;
+  justify-content:space-between;
+}
+.two-columns__bref{
+  margin: 0;
+  width:175px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+
+}
+.two-columns__main-text{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width:80%;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+}
+.two-columns__paragraph span{
+  font-weight: 600;
+}
+.two-columns__main-text p{
+  margin: 0;
+}
+
+
+
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
@@ -29,3 +123,5 @@
   margin-right: 0;
   margin-top: 80px;
 }
+
+
