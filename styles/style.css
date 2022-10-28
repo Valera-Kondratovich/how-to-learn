@@ -1,4 +1,4 @@
-h2, p {
+h2, h3, p {
   margin: 0;
 }
 .page {
@@ -86,10 +86,9 @@ h2, p {
 }
 .content{
   border:1px solid rebeccapurple;
+
 }
-.content__description{
-  margin-bottom: 100px;
-}
+
 
 /* --------СЕКЦИЯ 2------------- */
 
@@ -98,12 +97,14 @@ h2, p {
   border:1px solid rgb(90, 236, 255);
   margin: 0 auto;
 }
+.content__description {
+  margin-bottom: 100px;
+}
 .two-columns{
   display: flex;
   justify-content:space-between;
 }
 .two-columns__bref{
-  /* margin: 0; */
   width:175px;
   font-size: 18px;
   font-weight: normal;
@@ -135,7 +136,10 @@ h2, p {
 
 
 .digits{
-  border:1px solid rgb(0, 255, 64)
+  border:1px solid rgb(255, 187, 0)
+}
+.content__digits{
+  margin-bottom: 100px;
 }
 
 .section-title{
@@ -143,19 +147,52 @@ h2, p {
   margin: 0 auto;
   text-align: center;
   border:1px solid rgb(0, 255, 64);
+  font-size: 60px;
+  line-height: 1.15;
+  font-weight: 600;
+}
+.section-title__margin-bottom{
+  margin-bottom: 20px;
+}
+.section-subtitle{
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+.section-subtitle__margin-bottom{
+  margin-bottom: 60px;
 }
 
-
-
-
-
-
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
+.table{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content:space-between;
+  row-gap: 60px;
+  flex-wrap: wrap;
+  border:1px solid red;
+}
+.table__cell{
+  width: 250px;
+  border:1px solid rgb(0, 17, 255);
+}
+.table__heading{
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.table__text{
+  margin-bottom: 20px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+.table__text:last-child{
+  margin-bottom: 0;
 }
 
 
