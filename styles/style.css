@@ -240,3 +240,58 @@ h2, h3, p {
 .feynman__link::after{
   content:' \2192';
 }
+
+
+/* ----------СЕКЦИЯ 5-------------- */
+
+.kaufman{
+  /* overflow: hidden; */
+  background-color:#1f1f1f;
+  padding-bottom: 90px;
+  color: #fff;
+  z-index: -1;
+
+}
+.content__kaufman{
+  z-index: 0;
+  /* position:relative; */
+
+}
+.q{
+  position: relative;
+  z-index: 0;
+
+
+
+}
+.kaufman__triangle{
+  position:absolute;
+  z-index: 5;
+
+}
+.section-title_theme_dark{
+  padding-top: 90px;
+  z-index: 10;
+
+
+}
+.section-subtitle_theme_dark{
+  margin-bottom: 80px;
+
+}
+.table_theme_dark{
+  row-gap: 80px;
+
+
+}
+.table__cell_theme_dark{
+
+}
+/* .kaufman__triangle{
+  position: absolute;
+  display: block;
+  top:0;
+  right: -210px;
+  z-index: -1;
+  opacity: 0.99;
+} */
