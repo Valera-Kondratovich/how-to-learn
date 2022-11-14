@@ -1,3 +1,11 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -21,6 +29,7 @@
   display: flex;
   align-items: center;
   z-index: 1;
+  overflow: hidden;
 }
 
 .logo {
@@ -68,7 +77,12 @@
   width: 568px;
   background-color: #2f80ed;
   z-index: -1;
+
 }
+.rotation{
+  animation: rotation 20s infinite linear;
+}
+
 .header__main-illustration {
   width: 765px;
   height: 608px;
@@ -82,18 +96,17 @@
 
 
 /* --------СЕКЦИЯ 2------------- */
-
-.description{
-  width: 80%;
-  margin: 0 auto;
+.description {
   padding-top: 100px;
 }
 
-.two-columns{
+.two-columns {
+  margin: 0 auto;
   display: flex;
   justify-content:space-between;
+  width: 80%;
 }
-.two-columns__brief{
+.two-columns__brief {
   width:175px;
   font-size: 18px;
   font-weight: normal;
@@ -102,7 +115,7 @@
   margin: 0;
 
 }
-.two-columns__main-text{
+.two-columns__main-text {
   display:flex;
   flex-direction: column;
   justify-content: space-between;
@@ -112,19 +125,121 @@
   line-height: 34px;
   font-weight: normal;
 }
-.two-columns__span-accent{
+.two-columns__span-accent {
   font-weight: 600;
 }
-.two-columns__paragraph{
+.two-columns__paragraph {
   margin: 0 0 30px;
 }
 
-.two-columns__paragraph:last-child{
+.two-columns__paragraph:last-child {
   margin-bottom: 0;
 }
 
+/*---------СЕКЦИЯ 3----------*/
+.techniques {
+  padding-top: 100px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.cards{
+  list-style: none;
+}
 
-/* ---------СЕКИЯ 3 ------------*/
+.cards{
+  max-width: 920px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+column-gap: 100px;
+padding: 0;
+
+}
+.cards__item{
+  width:240px;
+  padding-top: 60px;
+
+}
+.cards__image{
+  padding: 0 40px;
+  width:160px;
+  height:160px;
+  border-radius: 50%;
+
+}
+.cards__title{
+  margin: 43px 0 16px;
+  text-align: center;
+
+}
+.cards__description{
+  margin: 0;
+  text-align: center;
+
+}
+
+/*------------СЕКЦИЯ 4--------------------*/
+.video{
+  padding-top: 100px;
+}
+.video__iframes {
+  position:relative;
+  bottom:-60px;
+  padding-top: 50px;
+  display: flex;
+  gap: 0 20px;
+  justify-content: center;
+}
+
+/*----------------СЕКЦИЯ 5----------*/
+.oakley{
+  padding-top: 160px;
+  background-color: #f2f2f2;
+}
+
+/* -----------------СЕКЦИЯ 6----------- */
+.feynman{
+  min-height: 890px;
+  background-color: #f2f2f2;
+  position: relative;
+  background-image: url('../images/feynman.png');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 867px 637px;
+}
+
+.feynman__title{
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+  max-width: 648px;
+  margin: 0 auto 70px;
+  text-align: center;
+  padding-top: 100px;
+
+}
+.feynman__subtitle{
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+}
+.feynman__link{
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-decoration: none;
+  color:#2f80ed;
+}
+.feynman__link::after{
+  content:' \2192';
+}
+
+/* ---------СЕКИЯ 7 ------------*/
 
 
 .digits{
@@ -181,50 +296,8 @@
   margin-bottom: 0;
 }
 
-/* -----------------СЕКЦИЯ 4----------- */
-.feynman{
-  min-height: 890px;
-  background-color: #f2f2f2;
-  position: relative;
-  background-image: url('../images/feynman.png');
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  background-size: 867px 637px;
-}
 
-.feynman__title{
-  line-height: 1.15;
-  font-size: 120px;
-  font-weight: 600;
-  max-width: 648px;
-  margin: 0 auto 70px;
-  text-align: center;
-  padding-top: 100px;
-
-}
-.feynman__subtitle{
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
-  text-align: center;
-  margin: 0;
-}
-.feynman__link{
-  position: absolute;
-  top: 50%;
-  right: 48px;
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
-  text-decoration: none;
-  color:#2f80ed;
-}
-.feynman__link::after{
-  content:' \2192';
-}
-
-
-/* ----------СЕКЦИЯ 5-------------- */
+/* ----------СЕКЦИЯ 9-------------- */
 
 .kaufman{
   position: relative;
@@ -267,7 +340,7 @@
 }
 
 
-/* ------------СЕКЦИЯ 6-------------- */
+/* ------------СЕКЦИЯ 11-------------- */
 
 
 .footer{
