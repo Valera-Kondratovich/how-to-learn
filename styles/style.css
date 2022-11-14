@@ -339,7 +339,71 @@ padding: 0;
   width: 200px;
 }
 
+/*------------СЕКЦИЯ 10 --------------*/
+.khan{
+  background-color: #f2f2f2;
+}
+.khan__container{
+  max-width:80%;
+  margin: 0 auto;
+}
+.khan__author {
+  margin: 0;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+.khan__title {
+  margin: 0;
+  font-size: 60px;
+  line-height: 1.15;
+  font-weight: 600;
+}
+.khan__quote{
+  margin: 50px 0 36px;
+  width:790px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+.khan__quote-author {
+  margin: 0 0 10px;
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: 600;
+}
+.khan__quote-author-subline {
+  margin: 0 0 68px;
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: normal;
+}
 
+.khan__book-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content:flex-start;
+  gap:0 48px;
+}
+.khan__book-pic {
+  background-image: url("../images/khan/khan-book.jpg");
+  width: 620px;
+  height: 608px;
+  background-repeat: no-repeat;
+  background-size:cover;
+
+}
+.khan__buy-link {
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: normal;
+  text-decoration: none;
+  color:#2f80ed;
+}
+.khan__buy-link::after{
+  content: ' \2192';
+}
 /* ------------СЕКЦИЯ 11-------------- */
 
 
