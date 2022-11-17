@@ -1,4 +1,4 @@
-.feynman__link{
+.feynman__link {
   position: absolute;
   top: 50%;
   right: 48px;
@@ -6,14 +6,17 @@
   font-size: 36px;
   font-weight: normal;
   text-decoration: none;
-  color:#2f80ed;
+  color: #2f80ed;
   opacity: 1;
+  -webkit-transition: opacity .3s linear;
+  -o-transition: opacity .3s linear;
   transition: opacity .3s linear;
 }
-.feynman__link::after{
-  content:' \2192';
+
+.feynman__link::after {
+  content: ' \2192';
 }
 
-.feynman__link:hover{
+.feynman__link:hover {
   opacity: .5;
 }

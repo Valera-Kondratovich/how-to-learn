@@ -1,16 +1,19 @@
-.footer__column-link{
+.footer__column-link {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
   text-decoration: none;
-  color:#fff;
+  color: #fff;
   opacity: 1;
+  -webkit-transition: opacity .3s linear;
+  -o-transition: opacity .3s linear;
   transition: opacity .3s linear;
 }
-.footer__column-link:last-of-type{
+
+.footer__column-link:last-of-type {
   margin-bottom: 16px;
 }
 
-.footer__column-link:hover{
+.footer__column-link:hover {
   opacity: .5;
 }
